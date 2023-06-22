@@ -1,0 +1,2 @@
+docker run -v /data/LiangHeng/LYC_19281197/project/microsleepnet-master:/workspace -tid --runtime=nvidia --name tensorboard --rm --net=host lin-ai-27:5000/lyc_19281197:cuda101_cudnn7_py38_tf23-version1 /bin/bash
+docker ps
