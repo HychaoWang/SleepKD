@@ -1,4 +1,4 @@
-<div align=center>![]('https://github.com/HychaoWang/SleepKD/edit/main/README.md#:~:text=README-,SleepKD,-.png')
+<div align=center>![]('https://github.com/HychaoWang/SleepKD/blob/main/img/SleepKD.png')
   
 # Teacher Assistant-Based Knowledge Distillation Extracting Multi-level Features on Single Channel Sleep EEG (sleepkd)
 
