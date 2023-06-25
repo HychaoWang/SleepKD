@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./img/SleepKD.png" alt="main" style="zoom: 33%;" />
+    <img src="./img/SleepKD.png" alt="main" style="zoom: 20%;" />
 </div>
 
   
