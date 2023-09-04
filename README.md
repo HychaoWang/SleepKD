@@ -9,6 +9,8 @@ Accepted by IJCAI 2023
 [[Paper]](https://www.ijcai.org/proceedings/2023/0439.pdf)
 [[Webpage]](https://hychaowang.github.io/SleepKD)
 
+![model_architecture](docs/images/Main.png)
+
 # Datasets
 ## ISRUC-III
 ISRUC-III collects the PSG data samples from 10 subjects (1 for males and 9 for females) for a whole night in 8 hours. The annotations of this dataset are scored by two professional experts.
