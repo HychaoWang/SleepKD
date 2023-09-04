@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<!-- === Header Starts === -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Teacher Assistant-Based Knowledge Distillation Extracting Multi-level Features on Single Channel Sleep EEG</title>
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/font.css" rel="stylesheet" type="text/css">
+    <link href="./assets/style.css" rel="stylesheet" type="text/css">
+    <script src="./assets/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/corpus.js"></script>
+
+</head>
+<!-- === Header Ends === -->
+
+<script>
+    var lang_flag = 1;
+
+
+</script>
+
+<body>
+
+<!-- === Home Section Starts === -->
+<div class="section">
+    <!-- === Title Starts === -->
+    <div class="header">
+        <!--        <div class="logo">-->
+        <!--            <a href="https://decisionforce.github.io/" target="_blank">-->
+        <!--                <img src="images/deciforce.png">-->
+        <!--            </a>-->
+        <!--        </div>-->
+        <!--        <div style="padding-top: 30pt; margin: 0 50pt;" class="title" id="lang">-->
+        <!--            Safe Driving via Expert Guided Policy Optimization-->
+        <!--        </div>-->
+
+        <table>
+            <tr>
+                <td>
+<!-- 
+                    <div class="logo"
+                         style="
+                         width: 100pt;
+                         vertical-align: text-top;
+                         text-align: center;
+                         ">
+                        <a href="https://decisionforce.github.io/" target="_blank">
+                            <img src="images/deciforce.png">
+                        </a>
+                    </div>-->
+
+                </td>
+                <td>
+                    <div style="padding-top: 10pt;" class="title" id="lang">
+                        Teacher Assistant-Based Knowledge Distillation Extracting Multi-level Features on Single Channel Sleep EEG
+                    </div>
+
+                </td>
+                <td>
+<!--
+                    <div class="logo"
+                         style="
+                         width: 100pt;
+                         padding-top: 10pt;
+                         vertical-align: center;
+                         text-align: center;
+                         ">
+                        <a href="https://github.com/decisionforce/metadrive" target="_blank">
+                            <img style=" width: 120pt;" src="images/metadrive.png">
+                        </a>
+                    </div>
+-->
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+    <!-- === Title Ends === -->
+    <div class="author">
+        <p style="text-align:center">International Joint Conference on Artificial Intelligence (IJCAI) 2023</p>
+        <a href="">Heng Liang</a><sup>1</sup>,&nbsp;
+        <a href="" target="_blank">Yucheng Liu</a><sup>1</sup>,&nbsp;&nbsp;
+        <a href="https://Hychaowang.github.io" target="_blank">Haichao Wang</a><sup>2</sup>,&nbsp;
+        <a href="https://ziyujia.github.io">Ziyu Jia</a><sup>1</sup>*&nbsp;
+    </div>
+
+    <div class="institution" style="font-size: 11pt;">
+        <div>
+            <sup>1</sup>Brainnetome Center, Institute of Automation, Chinese Academy of Sciences, Beijing, China,
+
+            <!--            <sup>2</sup>SenseTime Research <br>-->
+            <sup>2</sup>Tsinghua-Berkeley Shenzhen Institute, Shenzhen, China<br>
+
+        </div>
+    </div>
+    <table border="0" align="center">
+        <tr>
+            <td align="center" style="padding: 0pt 0 15pt 0">
+                <a class="bar" href="https://github.com/HychaoWang/SleepKD"><b>Code</b></a> |
+                <!--                <a class="bar" href="images/egpo_poster.png"><b>Poster</b></a> |-->
+                <a class="bar" href="#video"><b>Video</b></a> |
+                <a class="bar" href="https://www.ijcai.org/proceedings/2023/0439.pdf"><b>Paper</b></a> |
+                <a class="bar" href="./Poster.pdf"><b>Poster</b></a>
+
+
+
+            </td>
+        </tr>
+    </table>
+
+</div>
+<!-- === Home Section Ends === -->
+
+<!--<div class="section">-->
+<!--    &lt;!&ndash;    <div class="title" id="lang">Demonstrative Videos</div>&ndash;&gt;-->
+<!--    <div align="center">-->
+<!--        <table width="90%" style="margin: -20pt -5pt; text-align: center;">-->
+<!--            <tr>-->
+<!--                <td>-->
+<!--                    <video style="display:block; width:98%; height:auto; "-->
+<!--                           autoplay="autoplay" muted loop="loop" playsinline>-->
+<!--                        <source src="https://raw.githubusercontent.com/decisionforce/archive/master/EGPO/egpo_vs_ppo.mp4"-->
+<!--                                type="video/mp4"/>-->
+<!--                    </video>-->
+<!--                    <div style="top: -10%;">EGPO-trained agent exhibits safer driving behaviors than the PPO agent and obtains much lower cost.</div><br>-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            &lt;!&ndash;        </table>&ndash;&gt;-->
+<!--            &lt;!&ndash;        <br>&ndash;&gt;-->
+<!--            &lt;!&ndash;        <br>&ndash;&gt;-->
+<!--            &lt;!&ndash;        <table width="95%" style="margin: 0 0; text-align: center;">&ndash;&gt;-->
+<!--            &lt;!&ndash;            <tr>&ndash;&gt;-->
+<!--            &lt;!&ndash;                <td>&ndash;&gt;-->
+<!--            &lt;!&ndash;                    <video style="display:block; width:98%; height:auto;"&ndash;&gt;-->
+<!--            &lt;!&ndash;                           autoplay="autoplay" controls muted loop="loop">&ndash;&gt;-->
+<!--            &lt;!&ndash;                        <source src="https://raw.githubusercontent.com/decisionforce/archive/master/EGPO/egpo_showtime.mp4"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                type="video/mp4"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;                    </video>&ndash;&gt;-->
+<!--            &lt;!&ndash;                </td>&ndash;&gt;-->
+<!--            &lt;!&ndash;            </tr>&ndash;&gt;-->
+<!--            &lt;!&ndash;            <tr>&ndash;&gt;-->
+<!--            &lt;!&ndash;                <td>&ndash;&gt;-->
+<!--            &lt;!&ndash;                    The behaviors of EGPO-trained agents.&ndash;&gt;-->
+<!--            &lt;!&ndash;                </td>&ndash;&gt;-->
+<!--            &lt;!&ndash;            </tr>&ndash;&gt;-->
+<!--        </table>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!-- === Overview Section Starts === -->
+<div class="section">
+    <div class="title" id="lang">Teacher Assistant-Based Knowledge Distillation Extracting Multi-level Features on Single Channel Sleep EEG (SleepKD)</div>
+    <div class="body">
+        <div class="teaser">
+            <img src="images/Main.png">
+            <div class="text">
+                <br>
+                Fig. 1 Framework </div>
+        </div>
+        <div class="text">
+
+            <p>
+                SleepKD includes three modules, 
+                which are the multi-level knowledge distillation module (L<sub>epoch</sub> and L<sub>seq</sub>), 
+                the teacher assistant module, 
+                and other knowledge distillation module (L<sub>soft</sub> and L<sub>hard</sub>). 
+                The multi-level knowledge distillation module transfers knowledge in the features from the sleep epochs and sleep sequences. 
+                The teacher assistant module is designed to bridge the gap between the teacher and student network.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- === Result Section Starts === -->
+<div class="section">
+    <div class="title" id="lang">Experiment Result</div>
+    <div class="body">
+                
+        <div class="teaser">
+            <div class="text">
+        Table. 1 Performance of SleepKD on DeepSleepNet and SalientSleepNet.
+                 <br>
+            </div>
+        <img
+            src="images/performance.png">
+        </div>
+        <div class="text">
+            We evaluate SleepKD in different aspects. 
+            Table 1 presents that the student models achieve 74.68% and 71.78% on the compression ratio while the reduction of the accuracy are less than 1%. 
+            These data reveal that our framework is able to compress the model the most with the least cost of accuracy. 
+            Therefore, the performance in different aspects gets a significant improvement.
+        </div>
+        <div class="text">
+            As shown in Table 2, 
+            we perform several experiments with SleepKD and baseline methods on SalientSleepNet and DeepSleepNet, 
+            which are classic models with a CNN framework and a hybrid framework based on CNN and RNN, respectively. 
+            SleepKD achieves the SOTA knowledge distillation results.
+        </div>
+        <div class="teaser">
+                     <div class="text">
+
+                Table. 2 Comparison results.
+                          <br>
+                     </div>
+            <img
+                src="images/baseline.png">
+        </div>
+
+        </div>
+    </div>
+</div>
+<!-- === Result Section Ends === -->
+
+<!-- <div class="section">
+    <div class="title" id="video">Talk</div>
+    <div class="body">
+        <div class="vedio" style="position: relative; padding-top: 2%; margin: 0pt auto; text-align: center;">
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/Mp37zErSXwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </div>
+    </div>
+    <video width="900" height="506" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+</div> -->
+
+<!-- === Reference Section Starts === -->
+<div class="section">
+    <div class="bibtex">
+        <div class="text">Reference</div>
+    </div>
+
+    <!--    If you find this work useful in your project, please consider to cite it through:-->
+    <pre>
+        @inproceedings{DBLP:conf/ijcai/LiangLWJ23,
+            author       = {Heng Liang and
+                            Yucheng Liu and
+                            Haichao Wang and
+                            Ziyu Jia},
+            title        = {Teacher Assistant-Based Knowledge Distillation Extracting Multi-level
+                            Features on Single Channel Sleep {EEG}},
+            booktitle    = {Proceedings of the Thirty-Second International Joint Conference on
+                            Artificial Intelligence, {IJCAI} 2023, 19th-25th August 2023, Macao,
+                            SAR, China},
+            pages        = {3948--3956},
+            publisher    = {ijcai.org},
+            year         = {2023},
+            url          = {https://doi.org/10.24963/ijcai.2023/439},
+            doi          = {10.24963/ijcai.2023/439},
+            timestamp    = {Mon, 14 Aug 2023 16:05:12 +0200},
+            biburl       = {https://dblp.org/rec/conf/ijcai/LiangLWJ23.bib},
+            bibsource    = {dblp computer science bibliography, https://dblp.org}
+          }
+    </pre>
+    <!-- Adjust the frame size based on the demo (Every project differs). -->
+</div>
+
+</body>
+</html>
