@@ -5,26 +5,22 @@
 # SleepKD 
 Teacher Assistant-Based Knowledge Distillation Extracting Multi-level Features on Single Channel Sleep EEG
 
-[Paper](https://www.ijcai.org/proceedings/2023/0439.pdf)
-[Code](https://github.com/HychaoWang/SleepKD)
-[Webpage](https://hychaowang.github.io/SleepKD)
+Accepted by IJCAI 2023
+[[Paper]](https://www.ijcai.org/proceedings/2023/0439.pdf)
+[[Webpage]](https://hychaowang.github.io/SleepKD)
 
-# About the Paper
+# Datasets
+## ISRUC-III
+ISRUC-III collects the PSG data samples from 10 subjects (1 for males and 9 for females) for a whole night in 8 hours. The annotations of this dataset are scored by two professional experts.
 
-本方法针对睡眠阶段分类任务中脑电信号存在的多级特征，设计了一个基于助教模块的多级知识蒸馏框架，用于大规模睡眠模型压缩，并在两个睡眠数据集上取得了SOTA性能。
-
-
-# Roadmap
-- [x] Add Readme
-- [x] Build a webpage
-- [x] Upload codes for SalientSleepNet
-    - [x] Model
-    - [x] Distillation
-    - [x] Train
-- [ ] Upload codes for DeepSleepNet
-    - [ ] Model
-    - [ ] Distillation
-    - [ ] Train
+## Sleep-EDF
+Sleep-EDF is a very famous public dataset that contains the PSG data samples from 20 subjects (10 for males and 10 for females) in 2 days. The ages of the subjects range from 25 to 34 years old. These recordings were manually classi- fied into one of the eight classes (W, N1, N2, N3, N4, REM, Movement, Unknown) by sleep experts according to the R&K standard. For a fair comparison, we remove the Movement and Unknown stage, and merge the N3 and N4 stage into a single N3 stage according to the AASM manual.
 
 # Build With
-tensorflow 2.5.0
+
+- TensorFlow 2.5.0
+- Python 3.7
+
+# Usage
+
+We provide the distillation file `SleepKD.py`. You need to extract the intermediate features as the inputs of the SleepKD distillation layer.
