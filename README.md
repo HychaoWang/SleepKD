@@ -1,7 +1,3 @@
-<div align="center">
-    <img src="./img/SleepKD.png" alt="main" width="50%" height="50%" style="zoom: 33%;" />
-</div>
-
 # SleepKD 
 Teacher Assistant-Based Knowledge Distillation Extracting Multi-level Features on Single Channel Sleep EEG
 
